@@ -42,7 +42,7 @@ class ChamberTests extends AnyFlatSpec{
     }
 
     // Valid Configurations
-    it should "animate correctly when provided valid configurations" in {
+    it should "animate correctly when provided valid configurations and speeds" in {
         // All '.'
         var chamber = new Chamber("........").animate(1)
         assert(chamber == List("........"))

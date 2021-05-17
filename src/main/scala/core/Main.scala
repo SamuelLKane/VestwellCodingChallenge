@@ -1,6 +1,7 @@
 package core
 
 object Main extends App{
+    // provided initial configurations
     val chamber1 = new Chamber("..R....").animate(2)
     val chamber2 = new Chamber("RR..LRL").animate(3)
     val chamber3 = new Chamber("LRLR.LRLR").animate(2)
