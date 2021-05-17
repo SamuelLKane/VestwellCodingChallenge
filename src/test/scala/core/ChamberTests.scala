@@ -25,7 +25,7 @@ class ChamberTests extends AnyFlatSpec{
 
     it should "throw IllegalArgumentException if a string contains characters other than '.','L','R' is passed to the constructor" in {
         assertThrows[IllegalArgumentException] {
-            new Chamber("1")
+            new Chamber("L1R")
         }
     }
 

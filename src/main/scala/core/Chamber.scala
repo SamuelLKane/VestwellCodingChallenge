@@ -89,7 +89,7 @@ class Chamber(val initialConfig: String) {
         val default = ("." * List(rightList.head.size, leftList.head.size).max).split("").toList
 
         return rightList.zipAll(leftList, default, default)
-            .map(t => t._1 zip t._2 map{ case (a, b) => a + b })
+            .map(t => t._1 zip t._2 map{ case (a, b) => a + b }) // merges the two lists (e.g. [1,2] + [a,b] = [1a,2b]
             .map(l => l.flatMap(s => if (s.contains("X")) "X" else ".").mkString(""))
     }
 }
